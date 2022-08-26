@@ -11,7 +11,7 @@ const MessageList = (props) => {
         <View style={styles.container}>
             <FlatList
             data={Messages}
-            renderItem={(item) => <MessageDisplay message={item} />}
+            renderItem={({item}) => <MessageDisplay messages={item} />}
             />
         </View>
     )

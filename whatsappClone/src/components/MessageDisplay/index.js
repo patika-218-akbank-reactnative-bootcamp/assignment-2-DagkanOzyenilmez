@@ -3,29 +3,21 @@ import { View, Text, Image, StyleSheet } from "react-native";
 
 import styles from "./styles";
 
-const MessageDisplay = ({props}) => {
+const MessageDisplay = (props) => {
 
-    const {imageUrl, name, messageDisplay, messageDate } = props.user;
+    const { imageUrl, name, messageDisplay, messageDate } = props.messages;
 
     return(
             <View style={styles.divider}>
                     <Image style={styles.profile_image}
-                    source={{imageUrl}}
+                    source={{
+                        uri: imageUrl}}
                     />  
                     <View style={styles.column}>
-                    <Text style={styles.name_text}
-                    > 
-                        {name}
-                    </Text>
-                    <Text style={styles.messageDisplay}
-                    > 
-                        {messageDisplay}
-                    </Text>   
+                    <Text style={styles.name_text}>{name}</Text>
+                    <Text style={styles.messageDisplay}>{messageDisplay}</Text>   
                     </View>     
-                    <Text style={styles.messageDate}
-                    > 
-                        {messageDate}
-                    </Text>         
+                    <Text style={styles.messageDate}>{messageDate}</Text>         
             </View>
     )
 }
