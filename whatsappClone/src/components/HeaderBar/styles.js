@@ -2,8 +2,9 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     top_row: {
-        marginTop: 50,
-        padding: 20,
+        marginTop: 60,
+        marginLeft: 20,
+        marginBottom: 16,
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between'
@@ -13,9 +14,9 @@ const styles = StyleSheet.create({
         color: 'blue',
     }, 
     new_button: {
-        width: 18,
-        height: 18,
-        marginRight: 10,
+        width: 20,
+        height: 20,
+        marginRight: 20,
     },
     chats_text: {
         fontSize: 28,
@@ -28,7 +29,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         borderBottomWidth: 1,
-        borderBottomColor: 'gray'
+        borderBottomColor: '#DDDDDD',
+        marginBottom: 10,
     },
     broadCast_list_text: {
         marginLeft: 20,
@@ -39,7 +41,7 @@ const styles = StyleSheet.create({
     new_group_text: {
         fontSize: 16,
         color: 'blue',
-        marginRight: 10,
+        marginRight: 20,
     },
 })
 
